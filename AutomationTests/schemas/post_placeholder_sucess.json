@@ -1,0 +1,206 @@
+{
+    "type": "object",
+    "default": {},
+    "title": "Post Schema",
+    "required": [
+        "name",
+        "username",
+        "email",
+        "address",
+        "phone",
+        "website",
+        "company"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "default": "",
+            "title": "The name Schema",
+            "examples": [
+                "Javier Purdy"
+            ]
+        },
+        "username": {
+            "type": "string",
+            "default": "",
+            "title": "The username Schema",
+            "examples": [
+                "Valerie_Batz58"
+            ]
+        },
+        "email": {
+            "type": "string",
+            "default": "",
+            "title": "The email Schema",
+            "examples": [
+                "Marjorie60@hotmail.com"
+            ]
+        },
+        "address": {
+            "type": "object",
+            "default": {},
+            "title": "The address Schema",
+            "required": [
+                "street",
+                "suite",
+                "city",
+                "zipcode",
+                "geo"
+            ],
+            "properties": {
+                "street": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The street Schema",
+                    "examples": [
+                        "Mohr Harbors"
+                    ]
+                },
+                "suite": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The suite Schema",
+                    "examples": [
+                        "online"
+                    ]
+                },
+                "city": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The city Schema",
+                    "examples": [
+                        "Grantbury"
+                    ]
+                },
+                "zipcode": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The zipcode Schema",
+                    "examples": [
+                        "92998-3874"
+                    ]
+                },
+                "geo": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The geo Schema",
+                    "required": [
+                        "lat",
+                        "lng"
+                    ],
+                    "properties": {
+                        "lat": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The lat Schema",
+                            "examples": [
+                                "77.1721"
+                            ]
+                        },
+                        "lng": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The lng Schema",
+                            "examples": [
+                                "-47.2124"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "lat": "77.1721",
+                        "lng": "-47.2124"
+                    }]
+                }
+            },
+            "examples": [{
+                "street": "Mohr Harbors",
+                "suite": "online",
+                "city": "Grantbury",
+                "zipcode": "92998-3874",
+                "geo": {
+                    "lat": "77.1721",
+                    "lng": "-47.2124"
+                }
+            }]
+        },
+        "phone": {
+            "type": "string",
+            "default": "",
+            "title": "The phone Schema",
+            "examples": [
+                "592-320-5364"
+            ]
+        },
+        "website": {
+            "type": "string",
+            "default": "",
+            "title": "The website Schema",
+            "examples": [
+                "Giles.org"
+            ]
+        },
+        "company": {
+            "type": "object",
+            "default": {},
+            "title": "The company Schema",
+            "required": [
+                "name",
+                "catchPhrase",
+                "bs"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The name Schema",
+                    "examples": [
+                        "Bode - Koss"
+                    ]
+                },
+                "catchPhrase": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The catchPhrase Schema",
+                    "examples": [
+                        "Centralized multimedia analyzer"
+                    ]
+                },
+                "bs": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The bs Schema",
+                    "examples": [
+                        "optimize cross-platform schemas"
+                    ]
+                }
+            },
+            "examples": [{
+                "name": "Bode - Koss",
+                "catchPhrase": "Centralized multimedia analyzer",
+                "bs": "optimize cross-platform schemas"
+            }]
+        }
+    },
+    "examples": [{
+        "name": "Javier Purdy",
+        "username": "Valerie_Batz58",
+        "email": "Marjorie60@hotmail.com",
+        "address": {
+            "street": "Mohr Harbors",
+            "suite": "online",
+            "city": "Grantbury",
+            "zipcode": "92998-3874",
+            "geo": {
+                "lat": "77.1721",
+                "lng": "-47.2124"
+            }
+        },
+        "phone": "592-320-5364",
+        "website": "Giles.org",
+        "company": {
+            "name": "Bode - Koss",
+            "catchPhrase": "Centralized multimedia analyzer",
+            "bs": "optimize cross-platform schemas"
+        }
+    }]
+}
